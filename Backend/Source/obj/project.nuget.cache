@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "qknt0wykanI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MASTER\\Downloads\\FecapStudy_Completo (1)\\Backend\\Source\\BackendEstudoAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MASTER\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "O pacote 'MySqlConnector' 2.4.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-473q-m89c-ghf8",
+      "projectPath": "C:\\Users\\MASTER\\Downloads\\FecapStudy_Completo (1)\\Backend\\Source\\BackendEstudoAPI.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\MASTER\\Downloads\\FecapStudy_Completo (1)\\Backend\\Source\\BackendEstudoAPI.csproj",
+      "libraryId": "MySqlConnector",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

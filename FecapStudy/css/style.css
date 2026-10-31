@@ -1,0 +1,31 @@
+:root {
+  --fecap-dark: #0f1b33;
+  --fecap-primary: #1f5eff;
+  --fecap-accent: #00b8a9;
+  --fecap-bg: #f2f5fa;
+  --sombra: 0 4px 14px rgba(15, 27, 51, .08);
+}
+body { background: var(--fecap-bg); color: var(--fecap-dark); }
+.fecap-navbar { background: linear-gradient(135deg, var(--fecap-dark), #1b3a78); box-shadow: var(--sombra); }
+.card { border: 0; border-radius: 14px; box-shadow: var(--sombra); transition: transform .2s, box-shadow .2s; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(15, 27, 51, .14); }
+.form-control, .form-select { border-radius: 10px; }
+.form-control:focus, .form-select:focus { border-color: var(--fecap-primary); box-shadow: 0 0 0 .2rem rgba(31, 94, 255, .2); }
+.btn-fecap { color: #fff; border: 0; border-radius: 10px; background: linear-gradient(135deg, var(--fecap-primary), #4a82ff); }
+.btn-fecap:hover { color: #fff; filter: brightness(1.08); }
+.kpi .card-body { text-align: center; }
+.kpi-valor { font-size: 2rem; font-weight: 700; color: var(--fecap-primary); }
+.kpi-rotulo { color: #5b6b86; font-size: .9rem; }
+.previa-xp { font-size: 1.4rem; font-weight: 700; color: var(--fecap-accent); padding-top: .2rem; }
+.relatorio { background: var(--fecap-dark); color: #d6e4ff; border-radius: 10px; padding: 1rem; max-height: 260px; overflow: auto; margin: 0; }
+.historico { max-height: 340px; overflow-y: auto; }
+.historico::-webkit-scrollbar { width: 8px; }
+.historico::-webkit-scrollbar-thumb { background: #b5c3de; border-radius: 8px; }
+#statusBackend { background: #8a94a6; }
+#statusBackend.online { background: #1e9e5a; }
+#statusBackend.offline { background: #d64545; }
+#toast { position: fixed; right: 1rem; bottom: 1rem; z-index: 2000; display: flex; flex-direction: column; gap: .5rem; max-width: 340px; }
+.toast-item { color: #fff; padding: .75rem 1rem; border-radius: 10px; box-shadow: var(--sombra); animation: slideIn .3s ease; }
+@keyframes slideIn { from { transform: translateX(120%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@media (max-width: 768px) { .kpi-valor { font-size: 1.4rem; } .kpi-rotulo { font-size: .8rem; } }
+@media (prefers-reduced-motion: reduce) { .card, .toast-item { transition: none; animation: none; } }
